@@ -3,6 +3,8 @@ version: '2'
 services:
   app:
     image: micronaut-petclinic
+    build:
+      context: .
     ports:
       - "8080:8080"
     links:
